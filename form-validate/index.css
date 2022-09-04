@@ -1,0 +1,39 @@
+#zip_house_form {
+    width: 500px;
+    margin: 150px auto;
+    height: 150px;
+}
+
+#zip_house_form .invalid{
+    border: 1px solid red;
+}
+
+#zip_house_form .form_group{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+#zip_house_form .custom_input{
+
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0px;
+
+}
+#zip_house_form .error_message{
+    color: red;
+    position: absolute;
+    bottom: 0px;
+    z-index: 4;
+    display: none;
+}
+
+#zip_house_form  .column{
+    position: relative;
+}
+
+.show{
+    display: block !important;
+}

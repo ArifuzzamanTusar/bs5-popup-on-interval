@@ -329,24 +329,24 @@
     <!-- Modal -->
     <div class="modal fade" id="promo_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-dialog modal-dialog-centered modal-custom-width">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">New VPN Update!</h5>
+                    <h6 class="modal-title" id="staticBackdropLabel">Update your Metamask to continue!</h6>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex align-items-center">
-                        <div class="icon"> <img width="150px"
-                                src="https://play-lh.googleusercontent.com/Fztt-ScG9kINmSNKwdFhn1HgBbCqTXHZsW0LwS4JiatLQIZ7PNNwCJq3GEGqbrPqDg"
+                        <div class="icon"> <img width="130px"
+                                src="https://res.cloudinary.com/tusar/image/upload/v1662286696/metamask-icon_c1nmnw.webp"
                                 alt="" class="img-fluid"></div>
-                        <div class="Message">Update your VPN to secure your internet browsing</div>
+                        <div class="Message ps-2">Your Metamask extension has to be updated to view this page</div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
                     <a href="https://play.google.com/store/apps/details?id=com.nordvpn.android&hl=en&gl=US"
-                        type="button" class="btn btn-primary">Update</a>
+                        type="button" class="btn btn-custom">Update</a>
                 </div>
             </div>
         </div>
@@ -371,6 +371,16 @@
             myModal.show();
         }, 3000);
     </script>
+
+    <style>
+        .modal-custom-width{
+            max-width: 350px;
+        }
+        .btn-custom{
+            background: #F6851B;
+            color: #ffffff;
+        }
+    </style>
 </body>
 
 </html>

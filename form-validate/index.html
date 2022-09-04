@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <selector>
+        <div id="zip_house_form">
+            <form action="https://wattopjedak.solar/govolt-op-maat/" method="get">
+                <div class="form_group">
+                    <div class="column-1 column">
+                        <input size="1" type="text" name="zipcode" id="form-field-zipcode" class="custom_input"
+                            placeholder="Zip Code" autocomplete="off">
+                        <small class="error_message" id="zip_error">invalid</small>
+                    </div>
+                    <div class="column-2 column">
+                        <input size="1" type="text" name="huisnr" id="form-field-huisnr" class="custom_input"
+                            placeholder="Huisnr." autocomplete="off">
+                        <small class="error_message" id="huisnr_error">invalid</small>
+
+                        <input type="hidden" name="huisnr_number" id="form-field-ele_number">
+                        <input type="hidden" name="huisnr_ext" id="form-field-ele_number_ext">
+                    </div>
+                    <div class="column-3 column"> <input type="submit" value="Submit"></div>
+                </div>
+            </form>
+        </div>
+    </selector>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+<dl>
+    <dt><strong>Remote URL: </strong></dt>
+    <dd>https://app.2solar.nl/api/person</dd>
+    <dt><strong>Args: </strong></dt>
+    <dd>{"skip_postcode_check":"false","token":"6d389b7bfb60fbaa6626e2df01447d34f12cf43a","email":"peoms@finaltest.com","mobile":"(171)
+        364-4712","postcode":"3432TL","number":"12","number_ext":"A","first_name":"Peoms","last_name":"Islam","jaarlijks_verbruik":"0000"}
+    </dd>
+    <dt><strong>Response: </strong></dt>
+    <dd>server => nginx</dd>
+    <dd>date => Wed, 31 Aug 2022 22:59:28 GMT</dd>
+    <dd>content-type => application/json</dd>
+    <dd>set-cookie => PHPSESSID=dH-rvPNJaZ7%2Co8qx-PMD6qhLDS%2CyUQo6AIGaNpsqygJBbl5Q; path=/</dd>
+    <dd>expires => Thu, 19 Nov 1981 08:52:00 GMT</dd>
+    <dd>cache-control => no-store, no-cache, must-revalidate</dd>
+    <dd>pragma => no-cache</dd>
+    <dd>access-control-allow-origin => *</dd>
+    <dd>strict-transport-security => max-age=31536000</dd><strong>Body: </strong>
+    <dd>{"success":"Person saved","request_id":"2317593","person_id":"2283796"}</dd>
+    <dt><strong>Response Code: </strong></dt>
+    <dd>code => 200</dd>
+    <dd>message => OK</dd>
+</dl>
